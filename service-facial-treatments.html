@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facial Treatments | Hera Wellness Studio</title>
+  <meta name="description" content="Facial Treatments in Brisbane — Advanced facials for every skin type. Expert dermatologists. Book your free consultation today."/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z' fill='%230D2B23'/%3E%3C/svg%3E"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+<style>
+.svc-detail__hero-img{border-radius:var(--r-xl);overflow:hidden;aspect-ratio:1.3;box-shadow:var(--sh-lg);margin-bottom:40px}
+.svc-detail__hero-img img{width:100%;height:100%;object-fit:cover}
+.svc-detail__lead{font-size:17px;line-height:1.9;color:var(--char);margin-bottom:32px;padding-bottom:32px;border-bottom:1.5px solid var(--border);font-family:var(--ff-hd);font-style:italic}
+.svc-detail h2{font-family:var(--ff-hd);font-size:clamp(20px,2.5vw,27px);font-weight:600;color:var(--char);margin:40px 0 14px;line-height:1.3}
+.svc-detail h3{font-family:var(--ff-hd);font-size:17px;font-weight:500;color:var(--p-dark);margin:26px 0 10px}
+.svc-detail p{font-size:15.5px;line-height:1.85;color:var(--txt);margin-bottom:18px}
+.svc-detail ul,.svc-detail ol{padding-left:0;margin-bottom:24px}
+.svc-detail li{font-size:15px;line-height:1.8;color:var(--txt);padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--border)}
+.svc-detail li:last-child{border-bottom:none}
+.svc-detail ul li::before{content:'✓';position:absolute;left:0;color:var(--p);font-weight:700;top:11px;font-size:14px}
+.svc-detail ol{counter-reset:steps}
+.svc-detail ol li{counter-increment:steps}
+.svc-detail ol li::before{content:counter(steps);position:absolute;left:0;top:10px;width:22px;height:22px;border-radius:50%;background:var(--p-dark);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;text-align:center;line-height:22px}
+.svc-sidebar-box{background:var(--cream);border-radius:var(--r-xl);padding:28px;margin-bottom:20px}
+.svc-sidebar-box h4{font-family:var(--ff-hd);font-size:17px;font-weight:600;color:var(--char);margin-bottom:16px;padding-bottom:12px;border-bottom:1.5px solid var(--border)}
+.svc-sidebar-box p,.svc-sidebar-box li{font-size:13.5px;color:var(--muted);line-height:1.7}
+.svc-cta-box{background:var(--p-grad);border-radius:var(--r-xl);padding:32px;text-align:center;margin-bottom:20px}
+.svc-cta-box h4{font-family:var(--ff-hd);font-size:20px;font-weight:500;color:#fff;margin-bottom:10px}
+.svc-cta-box p{font-size:13.5px;color:rgba(255,255,255,.65);margin-bottom:22px}
+.svc-cat-item{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:var(--r);font-size:13.5px;color:var(--txt);transition:all .2s;border:1.5px solid transparent;text-decoration:none;display:flex}
+.svc-cat-item:hover{background:#fff;border-color:var(--border);color:var(--p-dark);box-shadow:var(--sh-sm)}
+.svc-cat-item.active{background:var(--p-dark);color:#fff;border-color:var(--p-dark)}
+.ba-section{background:var(--cream);padding:80px 0}
+.ba__grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.ba__wrap{position:relative;border-radius:var(--r-xl);overflow:hidden;aspect-ratio:1.15;box-shadow:var(--sh-md);user-select:none;cursor:ew-resize}
+.ba__img{position:absolute;inset:0}
+.ba__img img{width:100%;height:100%;object-fit:cover}
+.ba__img--after{clip-path:inset(0 50% 0 0)}
+.ba__divider{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:3px;background:#fff;z-index:5}
+.ba__divider-handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:#fff;box-shadow:var(--sh-md);display:flex;align-items:center;justify-content:center;color:var(--p-dark)}
+.ba__label{position:absolute;top:14px;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:50px;background:rgba(0,0,0,.55);color:#fff;z-index:6;backdrop-filter:blur(4px)}
+.ba__label--before{left:14px}
+.ba__label--after{right:14px}
+.ba__caption{text-align:center;margin-top:12px;font-size:12.5px;color:var(--muted);font-style:italic}
+.faq-section{padding:80px 0;background:var(--warm)}
+.acc{border-bottom:1px solid var(--border)}
+.acc__head{width:100%;display:flex;align-items:center;justify-content:space-between;padding:20px 0;font-size:15px;font-weight:500;color:var(--char);cursor:pointer;background:none;text-align:left;transition:color .25s;font-family:var(--ff-bd)}
+.acc__head:hover{color:var(--p)}
+.acc__ico{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--p);flex-shrink:0;transition:all .3s var(--ease)}
+.acc.open .acc__ico{background:var(--p-dark);border-color:var(--p-dark);color:#fff;transform:rotate(45deg)}
+.acc__body{max-height:0;overflow:hidden;transition:max-height .4s var(--ease),opacity .3s;opacity:0}
+.acc__body.open{max-height:400px;opacity:1}
+.acc__body p{padding:0 0 20px;font-size:14.5px;color:var(--muted);line-height:1.8}
+.svc-bottom-cta{background:var(--p-grad);padding:80px 0;text-align:center}
+.svc-bottom-cta h2{font-family:var(--ff-hd);font-size:clamp(24px,4vw,40px);color:#fff;margin-bottom:14px;font-weight:500}
+.svc-bottom-cta p{font-size:15px;color:rgba(255,255,255,.65);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto}
+.svc-bottom-cta .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+@media(max-width:768px){.ba__grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="cursor-spotlight hidden" id="cursorSpotlight" aria-hidden="true"></div>
+<div class="cursor-dot hidden" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring hidden" id="cursorRing" aria-hidden="true"></div>
+<header class="header scrolled" id="header" role="banner">
+  <div class="header__inner container">
+    <a href="index.html" class="logo" aria-label="Hera Wellness Studio home">
+      <span class="logo__mark"><svg width="32" height="32" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" fill="currentColor" opacity="0.25"/>
+          <path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <line x1="15" y1="5" x2="15" y2="24" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+        </svg></span>
+      <span class="logo__text">Hera <strong>Wellness</strong></span>
+    </a>
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About Us</a></li>
+        <li class="nav__has-drop">
+          <a href="services.html" class="nav__link active" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="7" viewBox="0 0 10 7" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <ul class="nav__drop" role="menu">
+            <li role="menuitem"><a href="service-facial-treatments.html">Facial Treatments</a></li><li role="menuitem"><a href="service-skin-rejuvenation.html">Skin Rejuvenation</a></li><li role="menuitem"><a href="service-anti-aging.html">Anti-Aging Treatment</a></li><li role="menuitem"><a href="service-body-contouring.html">Body Contouring</a></li><li role="menuitem"><a href="service-laser-treatment.html">Laser Treatment</a></li><li role="menuitem"><a href="service-acne-treatment.html">Acne Treatment</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary nav__cta btn--sm">Book Now
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<main id="main">
+<div class="page-hero">
+  <svg class="page-hero__deco page-hero__deco--left" width="200" height="200" viewBox="0 0 200 200" fill="none" aria-hidden="true"><path d="M100 180 C60 160, 20 120, 20 80 C20 40, 60 20, 100 40 C140 20, 180 40, 180 80 C180 120, 140 160, 100 180Z" stroke="rgba(255,255,255,.4)" stroke-width="1" fill="none"/><path d="M100 40 L100 180" stroke="rgba(255,255,255,.2)" stroke-width="1"/></svg>
+  <svg class="page-hero__deco page-hero__deco--right" width="160" height="160" viewBox="0 0 160 160" fill="none" aria-hidden="true"><path d="M80 10 C80 10, 140 50, 140 90 C140 130, 80 150, 80 150 C80 150, 20 130, 20 90 C20 50, 80 10, 80 10Z" stroke="rgba(255,255,255,.35)" stroke-width="1" fill="none"/><circle cx="80" cy="80" r="20" stroke="rgba(255,255,255,.2)" stroke-width="1" fill="none"/></svg>
+  <div class="page-hero__inner">
+    <h1 class="page-hero__title">Facial Treatments</h1>
+    <nav class="page-hero__breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <a href="services.html">Services</a> <span aria-hidden="true">/</span> <span aria-current="page">Facial Treatments</span></nav>
+  </div>
+</div>
+<section class="svc-detail section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 360px;gap:56px;align-items:start">
+      <!-- MAIN CONTENT -->
+      <article>
+        <div class="svc-detail__hero-img reveal-up">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1400&auto=format&fit=crop" alt="Facial Treatments treatment at Hera Wellness Studio" width="800" height="600" loading="eager">
+        </div>
+
+        <p class="svc-detail__lead reveal-up">Our signature facial treatments combine clinical-grade technology with organic, Australian-made formulations to deliver visible, lasting results. Whether your concern is hydration, pigmentation, acne, or ageing, our expert therapists craft a personalised experience tailored to your skin.</p>
+
+        <div class="svc-detail reveal-up">
+          <h2>About Facial Treatments</h2>
+          <p>From the classic Hydra Infusion Facial to our signature Hera Glow Treatment, every facial at our studio begins with a comprehensive skin analysis. Using state-of-the-art devices and the finest organic actives, we address your unique concerns while nourishing your skin barrier and restoring its natural radiance.</p>
+
+          <h2>Key Benefits</h2>
+          <ul><li>Deep pore cleansing and extraction</li><li>Intense hydration and barrier repair</li><li>Brightening and even skin tone</li><li>Collagen stimulation and anti-ageing</li><li>Customised for all skin types and sensitivities</li><li>Zero downtime — radiant results immediately</li></ul>
+
+          <h2>What to Expect: Procedure Overview</h2>
+          <ol><li>Thorough skin consultation and analysis</li><li>Gentle enzyme or AHA exfoliation</li><li>High-frequency cleansing and extractions</li><li>Active serum infusion via ultrasonic or LED</li><li>Customised mask and targeted serums</li><li>SPF and aftercare guidance</li></ol>
+
+          <div style="background:var(--gold-pale);border-radius:var(--r-lg);padding:28px 32px;margin:32px 0;border-left:4px solid var(--gold)">
+            <h3 style="margin-top:0;margin-bottom:10px;color:var(--p-dark)">Expected Results</h3>
+            <p style="margin-bottom:0;font-size:15px">Most clients notice a visible improvement in skin clarity, texture, and radiance after a single session. For lasting results and optimum skin health, we recommend a course of 4–6 treatments spaced 3–4 weeks apart.</p>
+          </div>
+
+          <div style="background:var(--cream);border-radius:var(--r-lg);padding:28px 32px;margin:24px 0;display:flex;gap:40px;flex-wrap:wrap">
+            <div>
+              <div style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Starting From</div>
+              <div style="font-family:var(--ff-hd);font-size:28px;font-weight:600;color:var(--p-dark)">From $120</div>
+            </div>
+            <div>
+              <div style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Treatment Duration</div>
+              <div style="font-family:var(--ff-hd);font-size:28px;font-weight:600;color:var(--p-dark)">60–90 min</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SIDEBAR -->
+      <aside style="position:sticky;top:100px">
+        <div class="svc-cta-box">
+          <h4>Ready to begin?</h4>
+          <p>Book a free consultation with our specialists today.</p>
+          <a href="contact.html" class="btn btn--gold btn--lg" style="display:block;text-align:center" data-popup>Book Free Consultation</a>
+          <a href="contact.html" class="btn btn--ghost-white" style="display:block;text-align:center;margin-top:10px">Call Us Now</a>
+        </div>
+        <div class="svc-sidebar-box">
+          <h4>Treatment Details</h4>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13.5px">
+              <span style="color:var(--muted)">Duration</span><strong style="color:var(--char)">60–90 min</strong>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13.5px">
+              <span style="color:var(--muted)">Starting from</span><strong style="color:var(--char)">From $120</strong>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;font-size:13.5px">
+              <span style="color:var(--muted)">Downtime</span><strong style="color:var(--char)">Minimal / None</strong>
+            </div>
+          </div>
+        </div>
+        <div class="svc-sidebar-box">
+          <h4>All Treatments</h4>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <a href="service-facial-treatments.html" class="svc-cat-item active">Facial Treatments<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="service-skin-rejuvenation.html" class="svc-cat-item">Skin Rejuvenation<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="service-anti-aging.html" class="svc-cat-item">Anti-Aging Treatment<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="service-body-contouring.html" class="svc-cat-item">Body Contouring<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="service-laser-treatment.html" class="svc-cat-item">Laser Treatment<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="service-acne-treatment.html" class="svc-cat-item">Acne Treatment<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE/AFTER -->
+<section class="ba-section" aria-label="Before and after results">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Real Results</span>
+      <h2 class="section-title">Before &amp; After</h2>
+      <p class="section-desc">Slide the divider to compare real client results. Individual results may vary.</p>
+    </div>
+    <div class="ba__grid">
+      <div>
+        <div class="ba__wrap reveal-left">
+          <div class="ba__img"><img src="https://images.unsplash.com/photo-1578374173705-969cbe6f2d6b?w=500&auto=format&fit=crop" alt="Before Facial Treatments treatment" width="600" height="520" loading="lazy"></div>
+          <div class="ba__img ba__img--after"><img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&auto=format&fit=crop" alt="After Facial Treatments treatment" width="600" height="520" loading="lazy"></div>
+          <div class="ba__divider">
+            <div class="ba__divider-handle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+          <span class="ba__label ba__label--before">Before</span>
+          <span class="ba__label ba__label--after">After</span>
+        </div>
+        <p class="ba__caption">← Drag to compare · Client result after 6 sessions</p>
+      </div>
+      <div style="display:flex;flex-direction:column;justify-content:center;padding:24px 0">
+        <span class="eyebrow">Visible Results</span>
+        <h3 style="font-family:var(--ff-hd);font-size:clamp(22px,3vw,32px);font-weight:500;color:var(--char);margin-bottom:16px;line-height:1.3">Real transformations, real clients</h3>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:24px">These results are from real Hera Wellness Studio clients. Individual results will vary based on skin type, lifestyle factors, and the number of sessions completed.</p>
+        <ul style="display:flex;flex-direction:column;gap:10px">
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--txt);font-weight:500;list-style:none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--p)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>No surgery required</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--txt);font-weight:500;list-style:none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--p)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Minimal to no downtime</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--txt);font-weight:500;list-style:none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--p)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Cumulative, long-lasting results</li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary btn--lg" style="margin-top:28px;align-self:flex-start" data-popup>Book My Treatment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" aria-labelledby="faq-h">
+  <div class="container" style="max-width:760px">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Got Questions?</span>
+      <h2 class="section-title" id="faq-h">Frequently Asked <em>Questions</em></h2>
+    </div>
+    
+      <div class="acc">
+        <button class="acc__head" aria-expanded="false">
+          How often should I have a facial?
+          <span class="acc__ico" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="acc__body"><p>For maintenance, once every 4–6 weeks aligns with your skin's natural renewal cycle. Targeted courses may require more frequent visits initially.</p></div>
+      </div>
+      <div class="acc">
+        <button class="acc__head" aria-expanded="false">
+          Are your facials suitable for sensitive skin?
+          <span class="acc__ico" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="acc__body"><p>Absolutely. Every treatment is fully customised. We use certified organic, fragrance-free formulations for sensitive and reactive skin types.</p></div>
+      </div>
+      <div class="acc">
+        <button class="acc__head" aria-expanded="false">
+          Is there any downtime?
+          <span class="acc__ico" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="acc__body"><p>Standard facials have zero downtime. Some deeper treatments may cause mild redness for a few hours — your therapist will advise beforehand.</p></div>
+      </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<div class="svc-bottom-cta">
+  <div class="container">
+    <h2>Ready to transform your skin?</h2>
+    <p>Book a free consultation and discover the right facial treatments plan for you.</p>
+    <div class="btns">
+      <a href="contact.html" class="btn btn--gold btn--lg" data-popup>Book Free Consultation</a>
+      <a href="services.html" class="btn btn--ghost-white btn--lg">All Treatments</a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<div class="footer__marquee" aria-hidden="true">
+  <div class="footer__marquee-track">
+    <span>Facial Treatments</span><em>✦</em><span>Skin Rejuvenation</span><em>✦</em><span>Anti-Aging</span><em>✦</em><span>Body Contouring</span><em>✦</em><span>Laser Treatment</span><em>✦</em><span>Acne Treatment</span><em>✦</em><span>Facial Treatments</span><em>✦</em><span>Skin Rejuvenation</span><em>✦</em><span>Anti-Aging</span><em>✦</em><span>Body Contouring</span><em>✦</em><span>Laser Treatment</span><em>✦</em><span>Acne Treatment</span><em>✦</em>
+  </div>
+</div>
+<footer class="footer" role="contentinfo">
+  <div class="footer__main">
+    <div class="container footer__grid">
+      <div class="footer__about">
+        <a href="index.html" class="logo footer-logo" aria-label="Hera Wellness Studio">
+          <div class="logo__mark" style="color:rgba(255,255,255,.7)"><svg width="32" height="32" viewBox="0 0 30 30" fill="none"><path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" fill="currentColor" opacity="0.3"/><path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div>
+          <span class="logo__text" style="color:#fff">Hera <strong>Wellness</strong></span>
+        </a>
+        <p>A sanctuary where beauty, health, and self-care come together — inspired by Hera, the goddess of renewal and feminine strength.</p>
+        <form class="footer__newsletter" action="#" method="post">
+          <label for="nl-email" class="sr-only">Newsletter email</label>
+          <input id="nl-email" type="email" name="newsletter_email" placeholder="Your email address" autocomplete="email"/>
+          <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Our Services</h4>
+        <ul class="footer__links">
+          <li><a href="service-facial-treatments.html">Facial Treatments</a></li><li><a href="service-skin-rejuvenation.html">Skin Rejuvenation</a></li><li><a href="service-anti-aging.html">Anti-Aging Treatment</a></li><li><a href="service-body-contouring.html">Body Contouring</a></li><li><a href="service-laser-treatment.html">Laser Treatment</a></li><li><a href="service-acne-treatment.html">Acne Treatment</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <ul class="footer__contact-list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Brisbane, QLD 4000, Australia</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+61700000000">+61 (07) 0000 0000</a></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:hello@herawellnessstudio.com.au">hello@herawellnessstudio.com.au</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>Copyright &copy; <time datetime="2026">2026</time> Hera Wellness Studio. All rights reserved.</p>
+      <nav class="footer__social" aria-label="Social media">
+        <a href="https://facebook.com" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://instagram.com" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+  <div class="popup-modal">
+    <button class="popup-close" id="popupClose" aria-label="Close popup">&#x2715;</button>
+    <div class="popup-modal__header">
+      <h2 class="popup-modal__title" id="popupTitle">Schedule Your Consultation</h2>
+      <p class="popup-modal__sub">Fill out the form below and our team will contact you within 24 hours to confirm your appointment.</p>
+    </div>
+    <form id="popupForm" novalidate>
+      <div class="popup-form__row">
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-name">Full Name <span>*</span></label><input class="popup-form__input" id="popup-name" type="text" placeholder="Your Full Name" autocomplete="name" required></div>
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-email">Email Address <span>*</span></label><input class="popup-form__input" id="popup-email" type="email" placeholder="your@email.com" autocomplete="email" required></div>
+      </div>
+      <div class="popup-form__row">
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-phone">Phone Number <span>*</span></label><input class="popup-form__input" id="popup-phone" type="tel" placeholder="+61 000 000 000" autocomplete="tel" required></div>
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-service">Preferred Treatment</label><select class="popup-form__select" id="popup-service">
+          <option value="">Select a treatment</option>
+          <option>Facial Treatments</option><option>Skin Rejuvenation</option><option>Anti-Aging Treatment</option><option>Body Contouring</option><option>Laser Treatment</option><option>Acne Treatment</option>
+        </select></div>
+      </div>
+      <div class="popup-form__group full"><label class="popup-form__label" for="popup-message">Message or Questions</label><textarea class="popup-form__textarea" id="popup-message" placeholder="Tell us about your goals or ask any questions..."></textarea></div>
+      <button type="submit" class="popup-form__submit">Request Consultation</button>
+    </form>
+    <div class="popup-success" id="popupSuccess">
+      <div class="popup-success__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <p class="popup-success__title">We'll be in touch soon!</p>
+      <p class="popup-success__text">Thank you for reaching out. Our team will contact you within 24 hours.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

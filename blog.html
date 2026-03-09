@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal | Hera Wellness Studio</title>
+  <meta name="description" content="Expert skin care tips, treatment guides, and wellness insights from the Hera Wellness Studio team in Brisbane."/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z' fill='%230D2B23'/%3E%3C/svg%3E"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="cursor-spotlight hidden" id="cursorSpotlight" aria-hidden="true"></div>
+<div class="cursor-dot hidden" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring hidden" id="cursorRing" aria-hidden="true"></div>
+<header class="header scrolled" id="header" role="banner">
+  <div class="header__inner container">
+    <a href="index.html" class="logo" aria-label="Hera Wellness Studio home">
+      <span class="logo__mark"><svg width="32" height="32" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" fill="currentColor" opacity="0.25"/>
+          <path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <line x1="15" y1="5" x2="15" y2="24" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+        </svg></span>
+      <span class="logo__text">Hera <strong>Wellness</strong></span>
+    </a>
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About Us</a></li>
+        <li class="nav__has-drop">
+          <a href="services.html" class="nav__link" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="7" viewBox="0 0 10 7" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <ul class="nav__drop" role="menu">
+            <li role="menuitem"><a href="service-facial-treatments.html">Facial Treatments</a></li><li role="menuitem"><a href="service-skin-rejuvenation.html">Skin Rejuvenation</a></li><li role="menuitem"><a href="service-anti-aging.html">Anti-Aging Treatment</a></li><li role="menuitem"><a href="service-body-contouring.html">Body Contouring</a></li><li role="menuitem"><a href="service-laser-treatment.html">Laser Treatment</a></li><li role="menuitem"><a href="service-acne-treatment.html">Acne Treatment</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav__link active">Blog</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary nav__cta btn--sm">Book Now
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<main id="main">
+<div class="page-hero">
+  <svg class="page-hero__deco page-hero__deco--left" width="200" height="200" viewBox="0 0 200 200" fill="none" aria-hidden="true"><path d="M100 180 C60 160, 20 120, 20 80 C20 40, 60 20, 100 40 C140 20, 180 40, 180 80 C180 120, 140 160, 100 180Z" stroke="rgba(255,255,255,.4)" stroke-width="1" fill="none"/><path d="M100 40 L100 180" stroke="rgba(255,255,255,.2)" stroke-width="1"/></svg>
+  <svg class="page-hero__deco page-hero__deco--right" width="160" height="160" viewBox="0 0 160 160" fill="none" aria-hidden="true"><path d="M80 10 C80 10, 140 50, 140 90 C140 130, 80 150, 80 150 C80 150, 20 130, 20 90 C20 50, 80 10, 80 10Z" stroke="rgba(255,255,255,.35)" stroke-width="1" fill="none"/><circle cx="80" cy="80" r="20" stroke="rgba(255,255,255,.2)" stroke-width="1" fill="none"/></svg>
+  <div class="page-hero__inner">
+    <h1 class="page-hero__title">Hera Journal</h1>
+    <nav class="page-hero__breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Blog</span></nav>
+  </div>
+</div>
+<section class="blog section" aria-labelledby="blog-h">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Hera Journal</span>
+      <h2 class="section-title" id="blog-h">Expert insights for <em>radiant skin &amp; total wellness</em></h2>
+      <p class="section-desc">Dermatology tips, treatment guides, and wellness wisdom from our team of specialists.</p>
+    </div>
+    <div class="blog__grid">
+
+      <article class="blog-card reveal-up">
+        <a href="blog-single.html" class="blog-card__img" aria-label="Read: The Science of Skin Renewal: Rebuilding Your Skin Barrier Naturally">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&auto=format&fit=crop" alt="The Science of Skin Renewal: Rebuilding Your Skin Barrier Naturally" width="600" height="220" loading="eager">
+          <span class="blog-card__cat">Skin Care</span>
+        </a>
+        <div class="blog-card__body">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:10px;display:flex;gap:14px">
+            <span>March 5, 2026</span><span>·</span><span>8 min read</span>
+          </div>
+          <a href="blog-single.html"><h3>The Science of Skin Renewal: Rebuilding Your Skin Barrier Naturally</h3></a>
+          <p style="font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:14px">Your skin barrier is the foundation of healthy, glowing skin. When compromised, no serum can fully compensate. Our lead dermatologist explains everything.</p>
+          <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+        </div>
+      </article>
+      <article class="blog-card reveal-up d1">
+        <a href="blog-single.html" class="blog-card__img" aria-label="Read: Acne Care for All Skin Types: A Complete Treatment Guide">
+          <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&auto=format&fit=crop" alt="Acne Care for All Skin Types: A Complete Treatment Guide" width="600" height="220" loading="eager">
+          <span class="blog-card__cat">Treatments</span>
+        </a>
+        <div class="blog-card__body">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:10px;display:flex;gap:14px">
+            <span>Feb 28, 2026</span><span>·</span><span>6 min read</span>
+          </div>
+          <a href="blog-single.html"><h3>Acne Care for All Skin Types: A Complete Treatment Guide</h3></a>
+          <p style="font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:14px">From hormonal breakouts to cystic acne — evidence-based strategies our dermatologists recommend for every skin type.</p>
+          <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+        </div>
+      </article>
+      <article class="blog-card reveal-up d2">
+        <a href="blog-single.html" class="blog-card__img" aria-label="Read: The Gut–Brain–Skin Connection: How Your Diet Shapes Your Complexion">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&auto=format&fit=crop" alt="The Gut–Brain–Skin Connection: How Your Diet Shapes Your Complexion" width="600" height="220" loading="eager">
+          <span class="blog-card__cat">Wellness</span>
+        </a>
+        <div class="blog-card__body">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:10px;display:flex;gap:14px">
+            <span>Feb 20, 2026</span><span>·</span><span>7 min read</span>
+          </div>
+          <a href="blog-single.html"><h3>The Gut–Brain–Skin Connection: How Your Diet Shapes Your Complexion</h3></a>
+          <p style="font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:14px">Inflammation, gut bacteria, and stress hormones all leave their mark on your face. Learn what to eat for clearer skin.</p>
+          <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+        </div>
+      </article>
+      <article class="blog-card reveal-up">
+        <a href="blog-single.html" class="blog-card__img" aria-label="Read: LED Light Therapy Explained: What Different Wavelengths Do for Your Skin">
+          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&auto=format&fit=crop" alt="LED Light Therapy Explained: What Different Wavelengths Do for Your Skin" width="600" height="220" loading="lazy">
+          <span class="blog-card__cat">Treatments</span>
+        </a>
+        <div class="blog-card__body">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:10px;display:flex;gap:14px">
+            <span>Feb 6, 2026</span><span>·</span><span>5 min read</span>
+          </div>
+          <a href="blog-single.html"><h3>LED Light Therapy Explained: What Different Wavelengths Do for Your Skin</h3></a>
+          <p style="font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:14px">Red, blue, near-infrared — each wavelength has a distinct therapeutic effect. Here's the science-backed breakdown.</p>
+          <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+        </div>
+      </article>
+      <article class="blog-card reveal-up d1">
+        <a href="blog-single.html" class="blog-card__img" aria-label="Read: 10 Collagen-Boosting Foods Your Skin Will Thank You For">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&auto=format&fit=crop" alt="10 Collagen-Boosting Foods Your Skin Will Thank You For" width="600" height="220" loading="lazy">
+          <span class="blog-card__cat">Nutrition</span>
+        </a>
+        <div class="blog-card__body">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:10px;display:flex;gap:14px">
+            <span>Jan 28, 2026</span><span>·</span><span>4 min read</span>
+          </div>
+          <a href="blog-single.html"><h3>10 Collagen-Boosting Foods Your Skin Will Thank You For</h3></a>
+          <p style="font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:14px">You don't need expensive supplements to support collagen production. These everyday foods work from the inside out.</p>
+          <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+        </div>
+      </article>
+      <article class="blog-card reveal-up d2">
+        <a href="blog-single.html" class="blog-card__img" aria-label="Read: Why Sleep Is the Most Underrated Skin Care Product You're Already Using">
+          <img src="https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?w=600&auto=format&fit=crop" alt="Why Sleep Is the Most Underrated Skin Care Product You're Already Using" width="600" height="220" loading="lazy">
+          <span class="blog-card__cat">Lifestyle</span>
+        </a>
+        <div class="blog-card__body">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:10px;display:flex;gap:14px">
+            <span>Jan 18, 2026</span><span>·</span><span>5 min read</span>
+          </div>
+          <a href="blog-single.html"><h3>Why Sleep Is the Most Underrated Skin Care Product You're Already Using</h3></a>
+          <p style="font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:14px">During deep sleep, your skin shifts into repair mode — rebuilding collagen, clearing toxins, and restoring hydration.</p>
+          <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:56px;padding:56px;background:var(--p-grad);border-radius:var(--r-xl);display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
+      <div style="text-align:left">
+        <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Stay Informed</div>
+        <h3 style="font-family:var(--ff-hd);font-size:clamp(20px,3vw,28px);color:#fff;font-weight:500;margin:0">Get expert skin tips delivered weekly</h3>
+      </div>
+      <form style="display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap" action="#" method="post">
+        <label for="nl-blog" class="sr-only">Email address</label>
+        <input id="nl-blog" type="email" placeholder="your@email.com" style="padding:13px 20px;border-radius:50px;border:1.5px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-size:14px;min-width:220px;outline:none;font-family:var(--ff-bd)">
+        <button type="submit" class="btn btn--gold">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="footer__marquee" aria-hidden="true">
+  <div class="footer__marquee-track">
+    <span>Facial Treatments</span><em>✦</em><span>Skin Rejuvenation</span><em>✦</em><span>Anti-Aging</span><em>✦</em><span>Body Contouring</span><em>✦</em><span>Laser Treatment</span><em>✦</em><span>Acne Treatment</span><em>✦</em><span>Facial Treatments</span><em>✦</em><span>Skin Rejuvenation</span><em>✦</em><span>Anti-Aging</span><em>✦</em><span>Body Contouring</span><em>✦</em><span>Laser Treatment</span><em>✦</em><span>Acne Treatment</span><em>✦</em>
+  </div>
+</div>
+<footer class="footer" role="contentinfo">
+  <div class="footer__main">
+    <div class="container footer__grid">
+      <div class="footer__about">
+        <a href="index.html" class="logo footer-logo" aria-label="Hera Wellness Studio">
+          <div class="logo__mark" style="color:rgba(255,255,255,.7)"><svg width="32" height="32" viewBox="0 0 30 30" fill="none"><path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" fill="currentColor" opacity="0.3"/><path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div>
+          <span class="logo__text" style="color:#fff">Hera <strong>Wellness</strong></span>
+        </a>
+        <p>A sanctuary where beauty, health, and self-care come together — inspired by Hera, the goddess of renewal and feminine strength.</p>
+        <form class="footer__newsletter" action="#" method="post">
+          <label for="nl-email" class="sr-only">Newsletter email</label>
+          <input id="nl-email" type="email" name="newsletter_email" placeholder="Your email address" autocomplete="email"/>
+          <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Our Services</h4>
+        <ul class="footer__links">
+          <li><a href="service-facial-treatments.html">Facial Treatments</a></li><li><a href="service-skin-rejuvenation.html">Skin Rejuvenation</a></li><li><a href="service-anti-aging.html">Anti-Aging Treatment</a></li><li><a href="service-body-contouring.html">Body Contouring</a></li><li><a href="service-laser-treatment.html">Laser Treatment</a></li><li><a href="service-acne-treatment.html">Acne Treatment</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <ul class="footer__contact-list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Brisbane, QLD 4000, Australia</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+61700000000">+61 (07) 0000 0000</a></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:hello@herawellnessstudio.com.au">hello@herawellnessstudio.com.au</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>Copyright &copy; <time datetime="2026">2026</time> Hera Wellness Studio. All rights reserved.</p>
+      <nav class="footer__social" aria-label="Social media">
+        <a href="https://facebook.com" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://instagram.com" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+  <div class="popup-modal">
+    <button class="popup-close" id="popupClose" aria-label="Close popup">&#x2715;</button>
+    <div class="popup-modal__header">
+      <h2 class="popup-modal__title" id="popupTitle">Schedule Your Consultation</h2>
+      <p class="popup-modal__sub">Fill out the form below and our team will contact you within 24 hours to confirm your appointment.</p>
+    </div>
+    <form id="popupForm" novalidate>
+      <div class="popup-form__row">
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-name">Full Name <span>*</span></label><input class="popup-form__input" id="popup-name" type="text" placeholder="Your Full Name" autocomplete="name" required></div>
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-email">Email Address <span>*</span></label><input class="popup-form__input" id="popup-email" type="email" placeholder="your@email.com" autocomplete="email" required></div>
+      </div>
+      <div class="popup-form__row">
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-phone">Phone Number <span>*</span></label><input class="popup-form__input" id="popup-phone" type="tel" placeholder="+61 000 000 000" autocomplete="tel" required></div>
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-service">Preferred Treatment</label><select class="popup-form__select" id="popup-service">
+          <option value="">Select a treatment</option>
+          <option>Facial Treatments</option><option>Skin Rejuvenation</option><option>Anti-Aging Treatment</option><option>Body Contouring</option><option>Laser Treatment</option><option>Acne Treatment</option>
+        </select></div>
+      </div>
+      <div class="popup-form__group full"><label class="popup-form__label" for="popup-message">Message or Questions</label><textarea class="popup-form__textarea" id="popup-message" placeholder="Tell us about your goals or ask any questions..."></textarea></div>
+      <button type="submit" class="popup-form__submit">Request Consultation</button>
+    </form>
+    <div class="popup-success" id="popupSuccess">
+      <div class="popup-success__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <p class="popup-success__title">We'll be in touch soon!</p>
+      <p class="popup-success__text">Thank you for reaching out. Our team will contact you within 24 hours.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

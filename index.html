@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hera Wellness Studio — Premium Skin Care & Beauty Treatments Brisbane</title>
+  <meta name="description" content="Hera Wellness Studio offers expert facial treatments, skin rejuvenation, anti-ageing, body contouring, laser and acne treatments in Brisbane. Book your consultation today."/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z' fill='%230D2B23'/%3E%3C/svg%3E"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="cursor-spotlight hidden" id="cursorSpotlight" aria-hidden="true"></div>
+<div class="cursor-dot hidden" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring hidden" id="cursorRing" aria-hidden="true"></div>
+<header class="header" id="header" role="banner">
+  <div class="header__inner container">
+    <a href="index.html" class="logo" aria-label="Hera Wellness Studio home">
+      <span class="logo__mark"><svg width="32" height="32" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" fill="currentColor" opacity="0.25"/>
+          <path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <line x1="15" y1="5" x2="15" y2="24" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+        </svg></span>
+      <span class="logo__text">Hera <strong>Wellness</strong></span>
+    </a>
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="about.html" class="nav__link">About Us</a></li>
+        <li class="nav__has-drop">
+          <a href="services.html" class="nav__link" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="7" viewBox="0 0 10 7" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <ul class="nav__drop" role="menu">
+            <li role="menuitem"><a href="service-facial-treatments.html">Facial Treatments</a></li><li role="menuitem"><a href="service-skin-rejuvenation.html">Skin Rejuvenation</a></li><li role="menuitem"><a href="service-anti-aging.html">Anti-Aging Treatment</a></li><li role="menuitem"><a href="service-body-contouring.html">Body Contouring</a></li><li role="menuitem"><a href="service-laser-treatment.html">Laser Treatment</a></li><li role="menuitem"><a href="service-acne-treatment.html">Acne Treatment</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary nav__cta btn--sm">Book Now
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero__wrap">
+      <div class="hero__background">
+        <img class="hero__bg-img" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&auto=format&fit=crop&q=80" alt="Hera Wellness Studio treatment room" width="1600" height="900" loading="eager"/>
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__left">
+            <div class="hero__tag animate-up d0">
+              <svg width="12" height="12" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" fill="currentColor"/></svg>
+              Premium Wellness Studio
+            </div>
+            <h1 class="hero__title animate-up d1">
+              Discover Your <em>Best Self</em>
+            </h1>
+            <p class="hero__sub animate-up d2">Rejuvenate, refresh, and restore at Hera Wellness Studio — where clinical expertise meets luxurious, personalised care.</p>
+            <div class="hero__actions animate-up d3">
+              <a href="services.html" class="btn btn--gold btn--lg">Explore Treatments</a>
+              <a href="contact.html" class="btn btn--ghost-white btn--lg" data-popup>Book Consultation</a>
+            </div>
+            <div class="hero__social animate-up d4">
+              <div class="hero__avatars">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="Happy client" width="34" height="34">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop" alt="Happy client" width="34" height="34">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop" alt="Happy client" width="34" height="34">
+              </div>
+              <div>
+                <div class="hero__stars">★★★★★</div>
+                <div class="hero__trust">Trusted by 2,000+ clients</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__right" aria-hidden="true">
+            <div class="hero__glass-card animate-up d1">
+              <div class="hero__glass-icon gold">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2C12 2 5 7 5 13C5 16.866 8.134 20 12 20C15.866 20 19 16.866 19 13C19 7 12 2 12 2Z"/></svg>
+              </div>
+              <div class="hero__glass-label"><span data-count="2000" data-suffix="+">0+</span></div>
+              <div class="hero__glass-desc">Happy Clients Served</div>
+            </div>
+            <div class="hero__glass-card animate-up d2">
+              <div class="hero__glass-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(196,150,90,.9)" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
+              </div>
+              <div class="hero__glass-label"><span data-count="12" data-suffix="+">0+</span></div>
+              <div class="hero__glass-desc">Expert Specialists</div>
+              <span class="hero__glass-badge">Award-Winning Team</span>
+            </div>
+            <div class="hero__glass-card animate-up d3">
+              <div class="hero__glass-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(196,150,90,.9)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="hero__glass-label"><span data-count="6">0</span></div>
+              <div class="hero__glass-desc">Signature Treatments</div>
+              <span class="hero__glass-badge">Clinically Proven</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-bar__inner">
+        <div class="stat-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div>
+            <div class="stat-num"><span data-count="2000" data-suffix="+">2,000+</span></div>
+            <div class="stat-lbl">Clients Served</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C12 2 5 7 5 13C5 16.866 8.134 20 12 20C15.866 20 19 16.866 19 13C19 7 12 2 12 2Z"/></svg>
+          <div>
+            <div class="stat-num"><span data-count="6">6</span></div>
+            <div class="stat-lbl">Signature Treatments</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <div>
+            <div class="stat-num"><span data-count="98" data-suffix="%">98%</span></div>
+            <div class="stat-lbl">Client Satisfaction</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <div>
+            <div class="stat-num"><span data-count="8" data-suffix="+">8+</span></div>
+            <div class="stat-lbl">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================
+       ABOUT — Exact screenshot layout
+       Left: 2 overlapping images + rotating badge
+       Right: eyebrow, heading, desc, checkbox list,
+              2 buttons, dark green stats card
+  ======================================== -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+
+      <!-- LEFT: Image composition -->
+      <div class="about__imgs reveal-left">
+        <!-- Main image — top, rounded top-right -->
+        <div class="about__img-top">
+          <img src="https://images.unsplash.com/photo-1612908688965-be2f6b8a6e4b?w=700&q=80" alt="Skin specialist treatment"/>
+        </div>
+        <!-- Secondary image — bottom-right, overlapping -->
+        <div class="about__img-bot">
+          <img src="https://images.unsplash.com/photo-1579165466949-3180a3d056d5?w=600&q=80" alt="Skincare consultation"/>
+        </div>
+        <!-- Rotating circular "Contact us" badge, overlapping both images -->
+        <a href="#contact" class="about__spin-badge" aria-label="Contact us">
+          <svg class="about__spin-svg" viewBox="0 0 140 140">
+            <path id="aboutCirclePath" d="M 70,70 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" fill="none"/>
+            <text>
+              <textPath href="#aboutCirclePath" startOffset="0%">
+                Contact us ✦ Contact us ✦ Contact us ✦ 
+              </textPath>
+            </text>
+          </svg>
+          <!-- Arrow icon in center -->
+          <div class="about__spin-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+      </div>
+
+      <!-- RIGHT: Content -->
+      <div class="about__content reveal-right">
+        <!-- Eyebrow with dot -->
+        <div class="about__eyebrow">
+          <span class="about__dot"></span>
+          <span>About Us</span>
+        </div>
+
+        <h2 class="about__title">Empowering Your Skin with Expert Care &amp; Solutions</h2>
+
+        <p class="about__desc">We're dedicated to helping you achieve and maintain beautiful, healthy skin. Trust us to provide exceptional care tailored to you.</p>
+
+        <!-- Checkbox list -->
+        <ul class="about__checks">
+          <li>
+            <span class="about__check-ico">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Commitment to Excellence in Skin Health
+          </li>
+          <li>
+            <span class="about__check-ico">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            State-of-the-Art Facility and Technology
+          </li>
+          <li>
+            <span class="about__check-ico">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Trusted by Thousands of Satisfied Patients
+          </li>
+        </ul>
+
+        <!-- Buttons row + stats card -->
+        <div class="about__bottom">
+          <div class="about__btns">
+            <a href="#services" class="btn btn--primary">About More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <button class="btn btn--play-outline">
+              <span class="about__play-ico">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+              Play Session
+            </button>
+          </div>
+
+          <!-- Dark green stats card -->
+          <div class="about__stats-card">
+            <div class="about__stats-ico">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="about__stats-num">29+</div>
+            <div class="about__stats-label">Team Members</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================
+       SERVICES — 3 large image overlay cards + dots
+  ======================================== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">Our Services</span>
+        <h2 class="section-title">Comprehensive dermatology services<br/>for <em>every skin need</em></h2>
+        <p class="section-desc">Each treatment is delivered with expertise, organic products, and deep care for your wellbeing.</p>
+      </div>
+
+      <div class="svc-slider" id="svcSlider">
+        <div class="svc-slider__track" id="svcTrack">
+
+          <!-- Slide 1: 3 cards -->
+          <div class="svc-slide">
+            <div class="svc-img-card">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="Organic Facials"/>
+              <div class="svc-img-card__overlay">
+                <div class="svc-img-card__ico">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+                </div>
+                <h3>Organic Facials</h3>
+                <p>Bespoke treatments using certified organic Australian-made products to restore your natural glow.</p>
+              </div>
+            </div>
+            <div class="svc-img-card">
+              <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80" alt="Skin Needling"/>
+              <div class="svc-img-card__overlay">
+                <div class="svc-img-card__ico">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <h3>Skin Needling</h3>
+                <p>Stimulate your skin's natural renewal for smoother texture, refined pores and reduced scarring.</p>
+              </div>
+            </div>
+            <div class="svc-img-card">
+              <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80" alt="LED Light Therapy"/>
+              <div class="svc-img-card__overlay">
+                <div class="svc-img-card__ico">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                </div>
+                <h3>LED Light Therapy</h3>
+                <p>Clinically proven light wavelengths that reduce inflammation and boost collagen production.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: 3 more cards -->
+          <div class="svc-slide">
+            <div class="svc-img-card">
+              <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80" alt="Cosmetic Acupuncture"/>
+              <div class="svc-img-card__overlay">
+                <div class="svc-img-card__ico">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22V2M2 12h20"/><circle cx="12" cy="12" r="5" opacity="0.4"/></svg>
+                </div>
+                <h3>Cosmetic Acupuncture</h3>
+                <p>A natural alternative to injectables — promoting circulation and stimulating collagen.</p>
+              </div>
+            </div>
+            <div class="svc-img-card">
+              <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&q=80" alt="Sculpting Massage"/>
+              <div class="svc-img-card__overlay">
+                <div class="svc-img-card__ico">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                </div>
+                <h3>Sculpting Massage</h3>
+                <p>Facial lifting, Gua Sha, cupping and buccal massage for a luminous complexion.</p>
+              </div>
+            </div>
+            <div class="svc-img-card">
+              <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80" alt="Women's Wellness"/>
+              <div class="svc-img-card__overlay">
+                <div class="svc-img-card__ico">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <h3>Women's Wellness</h3>
+                <p>Holistic support through fertility, pregnancy, postpartum, and menopause.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="svc-slider__foot">
+          <div class="svc-dots" id="svcDots"></div>
+          <p class="svc-slider__note">Find the right treatment for you — <a href="#contact">Book a Consultation</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       WHY CHOOSE US — Left content + right image
+  ======================================== -->
+  <section class="why section" id="why">
+    <div class="container why__grid">
+
+      <div class="why__content reveal-left">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2 class="section-title">Why choose us for all your <em>skin care needs?</em></h2>
+        <p>We believe in treating the whole woman — skin, body, and mind. Our evidence-based, holistic approach delivers lasting transformation, not just surface-level results.</p>
+
+        <div class="why__points">
+          <div class="why__point">
+            <div class="why__point-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4>Personalised skin care</h4>
+              <p>We address root causes — gut health, hormones, lifestyle — not just surface symptoms of your skin concerns.</p>
+            </div>
+          </div>
+          <div class="why__point">
+            <div class="why__point-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div>
+              <h4>Advanced clinical treatments</h4>
+              <p>Evidence-informed treatments combining traditional wisdom with modern skincare science for lasting results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why__img reveal-right">
+        <div class="why__img-wrap">
+          <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=700&q=80" alt="Expert skin care treatment"/>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================
+       CLINIC — Left large image, right content
+  ======================================== -->
+  <section class="clinic section" id="clinic">
+    <div class="container clinic__grid">
+
+      <div class="clinic__img reveal-left">
+        <div class="clinic__img-wrap">
+          <img src="https://images.unsplash.com/photo-1607006677494-13df34e62b30?w=800&q=80" alt="Expert dermatology care"/>
+          <div class="clinic__play">
+            <button class="play-btn" aria-label="Watch procedure video">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+            <span>Watch our procedure</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="clinic__content reveal-right">
+        <span class="eyebrow">Expert Care</span>
+        <h2 class="section-title">Expert dermatology care for <em>healthy, radiant skin</em></h2>
+        <p>Our comprehensive approach combines modern clinical science with ancient healing modalities. From your first consultation, we design a treatment pathway that evolves with your skin.</p>
+        <div class="clinic__feats">
+          <ul>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Acne &amp; Congestion
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Anti-Ageing
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Pigmentation
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Rosacea &amp; Sensitivity
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Deep Dehydration
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Pregnancy Skincare
+            </li>
+          </ul>
+        </div>
+        <a href="#contact" class="btn btn--primary">Book a Consultation</a>
+        <p class="clinic__note">For specialised care — <a href="#contact">contact our team today</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================
+       PROCESS — Left steps, right image + card
+  ======================================== -->
+  <section class="process section" id="process">
+    <div class="container process__grid">
+
+      <div class="process__content reveal-left">
+        <span class="eyebrow">Our Approach</span>
+        <h2 class="section-title">How we work: a commitment to <em>your skin health</em></h2>
+        <p>Our approach is rooted in listening — truly understanding you, your skin, and your goals before we design your pathway to transformation.</p>
+
+        <div class="process__steps">
+          <div class="process__step">
+            <div class="process__num">01</div>
+            <div>
+              <h4>Personalised Consultation</h4>
+              <p>In-depth analysis of your skin, health history, and lifestyle to understand root causes.</p>
+            </div>
+          </div>
+          <div class="process__step">
+            <div class="process__num">02</div>
+            <div>
+              <h4>Bespoke Treatment Plans</h4>
+              <p>Combining the right modalities, organic products, and home care protocols uniquely for you.</p>
+            </div>
+          </div>
+          <div class="process__step">
+            <div class="process__num">03</div>
+            <div>
+              <h4>Ongoing Care &amp; Results</h4>
+              <p>We monitor your progress and evolve your plan to ensure transformative, lasting results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="process__visual reveal-right">
+        <div class="process__img-wrap">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=80" alt="Skin treatment process"/>
+          <div class="process__img-badge">
+            <p>"Expert care, trusted results — for every skin concern."</p>
+            <a href="#contact" class="btn btn--primary btn--sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Send Message
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================
+       WHY CHOOSE — DARK section, center person + 6 icon cards
+  ======================================== -->
+  <section class="exceptional section" id="exceptional">
+    <div class="exceptional__bg">
+      <svg class="exc-deco" viewBox="0 0 200 200" fill="none" opacity="0.06"><path d="M100 10C100 10 20 40 20 110C20 154.183 56.817 190 100 190C143.183 190 180 154.183 180 110C180 40 100 10 100 10Z" stroke="white" stroke-width="3"/><line x1="100" y1="10" x2="100" y2="190" stroke="white" stroke-width="2"/></svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow light">Treatments</span>
+        <h2 class="section-title light">Exceptional dermatology, every step of<br/><em>the way</em></h2>
+        <p class="section-desc light">Our complete range of wellness treatments, guided by expert hands and organic protocols.</p>
+      </div>
+
+      <div class="exc__layout">
+        <!-- Left 3 icons -->
+        <div class="exc__col exc__col--left">
+          <div class="exc__item reveal-left">
+            <div class="exc__item-text">
+              <h4>Expert Dermatology</h4>
+              <p>Advanced skincare combining evidence-based science with holistic practice.</p>
+            </div>
+            <div class="exc__item-ico">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
+            </div>
+          </div>
+          <div class="exc__item reveal-left d1">
+            <div class="exc__item-text">
+              <h4>Aesthetic Wellness</h4>
+              <p>Non-invasive beauty treatments for lasting, natural-looking rejuvenation.</p>
+            </div>
+            <div class="exc__item-ico">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+          </div>
+          <div class="exc__item reveal-left d2">
+            <div class="exc__item-text">
+              <h4>Acupuncture Care</h4>
+              <p>Traditional Chinese medicine techniques for skin rejuvenation and inner balance.</p>
+            </div>
+            <div class="exc__item-ico">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22V2M2 12h20"/><circle cx="12" cy="12" r="5" opacity="0.4"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center image -->
+        <div class="exc__center reveal-up">
+          <div class="exc__center-img">
+            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&q=80" alt="Skin wellness treatment"/>
+          </div>
+        </div>
+
+        <!-- Right 3 icons -->
+        <div class="exc__col exc__col--right">
+          <div class="exc__item exc__item--rev reveal-right">
+            <div class="exc__item-ico">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="exc__item-text">
+              <h4>Comprehensive Care</h4>
+              <p>Full-spectrum skin health programmes tailored to your unique journey.</p>
+            </div>
+          </div>
+          <div class="exc__item exc__item--rev reveal-right d1">
+            <div class="exc__item-ico">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+            </div>
+            <div class="exc__item-text">
+              <h4>LED Light Therapy</h4>
+              <p>Evidence-based photobiomodulation for healing, renewal, and vibrant skin.</p>
+            </div>
+          </div>
+          <div class="exc__item exc__item--rev reveal-right d2">
+            <div class="exc__item-ico">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="exc__item-text">
+              <h4>Women's Wellness</h4>
+              <p>Compassionate care honouring every season of a woman's life and wellbeing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       BEFORE & AFTER — 2 large comparison images side by side
+  ======================================== -->
+  <section class="ba section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">Real Results</span>
+        <h2 class="section-title">Before &amp; after: witness the <em>power of dermatology</em></h2>
+        <p class="section-desc">Real client transformations through our holistic, evidence-based skincare protocols.</p>
+      </div>
+
+      <div class="ba__grid">
+        <div class="ba__comparison reveal-left">
+          <div class="ba__slider-wrap" id="baSlider1">
+            <div class="ba__img ba__img--before">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&h=420&q=80&fit=crop&crop=face" alt="Before treatment"/>
+            </div>
+            <div class="ba__img ba__img--after">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=420&q=80&fit=crop&crop=face" alt="After treatment"/>
+            </div>
+            <div class="ba__divider" id="baDivider1">
+              <div class="ba__handle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12H3M8 7l-5 5 5 5M16 17l5-5-5-5"/></svg>
+              </div>
+            </div>
+            <span class="ba__tag ba__tag--b">Before</span>
+            <span class="ba__tag ba__tag--a">After</span>
+          </div>
+          <p>Acne &amp; Scarring Treatment — 8 Week Course</p>
+        </div>
+
+        <div class="ba__comparison reveal-right">
+          <div class="ba__slider-wrap" id="baSlider2">
+            <div class="ba__img ba__img--before">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=420&q=80&fit=crop&crop=face" alt="Before treatment"/>
+            </div>
+            <div class="ba__img ba__img--after">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=420&q=80&fit=crop&crop=face" alt="After treatment"/>
+            </div>
+            <div class="ba__divider" id="baDivider2">
+              <div class="ba__handle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12H3M8 7l-5 5 5 5M16 17l5-5-5-5"/></svg>
+              </div>
+            </div>
+            <span class="ba__tag ba__tag--b">Before</span>
+            <span class="ba__tag ba__tag--a">After</span>
+          </div>
+          <p>Anti-Ageing &amp; Pigmentation — 12 Week Programme</p>
+        </div>
+      </div>
+
+      <div class="section-cta reveal-up">
+        <a href="#contact" class="btn btn--primary">See More Results</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FAQ — Dark green card, left heading, right accordion
+  ======================================== -->
+  <section class="faq section">
+    <div class="container">
+      <div class="faq__card reveal-up">
+        <div class="faq__deco">
+          <svg viewBox="0 0 200 200" fill="none"><path d="M100 10C100 10 20 40 20 110C20 154.183 56.817 190 100 190C143.183 190 180 154.183 180 110C180 40 100 10 100 10Z" stroke="white" stroke-width="2" opacity="0.1"/><line x1="100" y1="10" x2="100" y2="190" stroke="white" stroke-width="1" opacity="0.08"/></svg>
+        </div>
+        <div class="faq__left">
+          <span class="eyebrow light">Our FAQ</span>
+          <h2 class="faq__title">Frequently asked questions — <em>find out more</em></h2>
+          <p>Have more questions? Get in touch with our skin care team — we'd love to help you find the right treatment.</p>
+          <a href="#contact" class="btn btn--white mt-24">Contact Us</a>
+        </div>
+        <div class="faq__right">
+
+          <div class="acc">
+            <button class="acc__head">
+              <span>Do you treat all skin types and concerns?</span>
+              <svg class="acc__ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="acc__body">
+              <p>Yes — we tailor every treatment to your unique skin. Whether you have oily, dry, combination, sensitive, or mature skin, we have protocols specifically for you.</p>
+            </div>
+          </div>
+
+          <div class="acc">
+            <button class="acc__head">
+              <span>Can I book a consultation before committing to treatment?</span>
+              <svg class="acc__ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="acc__body">
+              <p>Absolutely. We offer initial skin consultations where we thoroughly assess your skin, discuss your concerns and goals, and recommend the most suitable treatment pathway.</p>
+            </div>
+          </div>
+
+          <div class="acc">
+            <button class="acc__head">
+              <span>Are your products safe for sensitive skin?</span>
+              <svg class="acc__ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="acc__body">
+              <p>All products used at Hera are certified organic, free from harsh chemicals and synthetic fragrances — safe for even the most reactive and sensitive skin types.</p>
+            </div>
+          </div>
+
+          <div class="acc">
+            <button class="acc__head">
+              <span>Simple treatments for managing acne?</span>
+              <svg class="acc__ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="acc__body">
+              <p>We use a combination of organic facials, LED light therapy, skin needling, and nutritional advice to address acne at its root cause for lasting, clear results.</p>
+            </div>
+          </div>
+
+          <div class="acc">
+            <button class="acc__head">
+              <span>What is the best skin pigmentation treatment?</span>
+              <svg class="acc__ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="acc__body">
+              <p>Depending on your pigmentation type, we may recommend LED therapy, skin needling, cosmetic acupuncture, or a combination of modalities paired with tailored homecare.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       TESTIMONIALS — 2 cards side by side
+  ======================================== -->
+  <section class="testi section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">Client Stories</span>
+        <h2 class="section-title">Real patient stories that reflect<br/><em>exceptional skin care</em></h2>
+        <p class="section-desc">Hear what our clients say about their transformative experience at Hera Wellness Studio.</p>
+      </div>
+
+      <div class="testi__grid">
+        <div class="testi__card reveal-left">
+          <div class="testi__top">
+            <svg width="32" height="26" viewBox="0 0 32 26" fill="currentColor" class="testi__quote"><path d="M0 26V16.5C0 9.833 2.333 4.833 7 1.5L9.5 4C7.167 5.667 5.833 8 5.5 11H11V26H0ZM21 26V16.5C21 9.833 23.333 4.833 28 1.5L30.5 4C28.167 5.667 26.833 8 26.5 11H32V26H21Z"/></svg>
+            <div class="testi__stars">★★★★★</div>
+          </div>
+          <p>"A facial with Lily is absolute perfection — gentle, authentic, and deeply peaceful. Heavenly organic products that make my tired mum skin glow every single time. I've been going for years and wouldn't go anywhere else in the world."</p>
+          <div class="testi__author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=52&h=52&q=80&fit=crop&crop=face" alt="Sarah M."/>
+            <div>
+              <strong>Sarah M.</strong>
+              <span>Organic Facial Client</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi__card reveal-right">
+          <div class="testi__top">
+            <svg width="32" height="26" viewBox="0 0 32 26" fill="currentColor" class="testi__quote"><path d="M0 26V16.5C0 9.833 2.333 4.833 7 1.5L9.5 4C7.167 5.667 5.833 8 5.5 11H11V26H0ZM21 26V16.5C21 9.833 23.333 4.833 28 1.5L30.5 4C28.167 5.667 26.833 8 26.5 11H32V26H21Z"/></svg>
+            <div class="testi__stars">★★★★★</div>
+          </div>
+          <p>"HERA has completely transformed my skin. After years of struggling with hormonal acne, Lily's holistic approach — treating both internal and external causes — finally gave me the clear skin I had always dreamed of. Life-changing."</p>
+          <div class="testi__author">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=52&h=52&q=80&fit=crop&crop=face" alt="Jessica K."/>
+            <div>
+              <strong>Jessica K.</strong>
+              <span>Skin Needling Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social proof strip -->
+      <div class="testi__social reveal-up">
+        <span>Find us on:</span>
+        <a href="#" class="testi__soc-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/></svg>
+          Instagram
+        </a>
+        <a href="#" class="testi__soc-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+        <a href="#" class="testi__soc-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          TikTok
+        </a>
+        <a href="#" class="testi__soc-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          YouTube
+        </a>
+        <a href="#" class="testi__soc-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       TEAM — 4 portrait cards with gradient overlay
+  ======================================== -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">Our Specialists</span>
+        <h2 class="section-title">Our expert team: committed to your <em>skin health and beauty</em></h2>
+        <p class="section-desc">Certified skin therapists trained in the most advanced holistic and clinical modalities.</p>
+      </div>
+      <div class="team__grid">
+
+        <div class="team__card reveal-up">
+          <div class="team__img-wrap">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&q=80&fit=crop" alt="Dr. Lily Chen"/>
+            <div class="team__overlay">
+              <h3>Dr. Lily Chen</h3>
+              <span>Founder &amp; Lead Therapist</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team__card reveal-up d1">
+          <div class="team__img-wrap">
+            <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=500&q=80&fit=crop" alt="Sophie Williams"/>
+            <div class="team__overlay">
+              <h3>Sophie Williams</h3>
+              <span>Advanced Skin Therapist</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team__card reveal-up d2">
+          <div class="team__img-wrap">
+            <img src="https://images.unsplash.com/photo-1622253694242-abeb37a33e97?w=400&h=500&q=80&fit=crop" alt="Dr. Aaron Hughes"/>
+            <div class="team__overlay">
+              <h3>Dr. Aaron Hughes</h3>
+              <span>Dermatology Specialist</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team__card reveal-up d3">
+          <div class="team__img-wrap">
+            <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=400&h=500&q=80&fit=crop" alt="Maya Patel"/>
+            <div class="team__overlay">
+              <h3>Maya Patel</h3>
+              <span>Women's Wellness Expert</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="blog section" id="blog" aria-labelledby="blog-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">Hera Journal</span>
+        <h2 class="section-title" id="blog-heading">Insights for <em>radiant skin &amp; wellness</em></h2>
+        <p class="section-desc">Expert advice, skin science, and wellness wisdom from our team of specialists.</p>
+      </div>
+      <div class="blog__grid">
+        <article class="blog-card reveal-up">
+          <a href="blog-single.html" class="blog-card__img" aria-label="Read: The Science of Skin Renewal">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&auto=format&fit=crop" alt="Skin barrier renewal" width="600" height="220" loading="lazy">
+            <span class="blog-card__cat">Skin Care</span>
+          </a>
+          <div class="blog-card__body">
+            <a href="blog-single.html"><h3>The Science of Skin Renewal: How to Rebuild Your Skin Barrier Naturally</h3></a>
+            <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+          </div>
+        </article>
+        <article class="blog-card reveal-up d1">
+          <a href="blog-single.html" class="blog-card__img" aria-label="Read: Seasonal Skin Care Guide">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&auto=format&fit=crop" alt="Seasonal skin care" width="600" height="220" loading="lazy">
+            <span class="blog-card__cat">Treatments</span>
+          </a>
+          <div class="blog-card__body">
+            <a href="blog-single.html"><h3>Understanding the Seasons: Natural Skin Care Through Every Stage</h3></a>
+            <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+          </div>
+        </article>
+        <article class="blog-card reveal-up d2">
+          <a href="blog-single.html" class="blog-card__img" aria-label="Read: Gut Brain Skin Connection">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&auto=format&fit=crop" alt="Gut brain skin connection" width="600" height="220" loading="lazy">
+            <span class="blog-card__cat">Wellness</span>
+          </a>
+          <div class="blog-card__body">
+            <a href="blog-single.html"><h3>The Gut–Brain–Skin Connection: How Your Diet Shapes Your Complexion</h3></a>
+            <p class="blog-card__meta"><a href="blog-single.html">Read More →</a></p>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:44px">
+        <a href="blog.html" class="btn btn--ghost btn--lg">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="footer__marquee" aria-hidden="true">
+  <div class="footer__marquee-track">
+    <span>Facial Treatments</span><em>✦</em><span>Skin Rejuvenation</span><em>✦</em><span>Anti-Aging</span><em>✦</em><span>Body Contouring</span><em>✦</em><span>Laser Treatment</span><em>✦</em><span>Acne Treatment</span><em>✦</em><span>Facial Treatments</span><em>✦</em><span>Skin Rejuvenation</span><em>✦</em><span>Anti-Aging</span><em>✦</em><span>Body Contouring</span><em>✦</em><span>Laser Treatment</span><em>✦</em><span>Acne Treatment</span><em>✦</em>
+  </div>
+</div>
+<footer class="footer" role="contentinfo">
+  <div class="footer__main">
+    <div class="container footer__grid">
+      <div class="footer__about">
+        <a href="index.html" class="logo footer-logo" aria-label="Hera Wellness Studio">
+          <div class="logo__mark" style="color:rgba(255,255,255,.7)"><svg width="32" height="32" viewBox="0 0 30 30" fill="none"><path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" fill="currentColor" opacity="0.3"/><path d="M15 3C15 3 7 9 7 17C7 21.418 10.582 25 15 25C19.418 25 23 21.418 23 17C23 9 15 3 15 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div>
+          <span class="logo__text" style="color:#fff">Hera <strong>Wellness</strong></span>
+        </a>
+        <p>A sanctuary where beauty, health, and self-care come together — inspired by Hera, the goddess of renewal and feminine strength.</p>
+        <form class="footer__newsletter" action="#" method="post">
+          <label for="nl-email" class="sr-only">Newsletter email</label>
+          <input id="nl-email" type="email" name="newsletter_email" placeholder="Your email address" autocomplete="email"/>
+          <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Our Services</h4>
+        <ul class="footer__links">
+          <li><a href="service-facial-treatments.html">Facial Treatments</a></li><li><a href="service-skin-rejuvenation.html">Skin Rejuvenation</a></li><li><a href="service-anti-aging.html">Anti-Aging Treatment</a></li><li><a href="service-body-contouring.html">Body Contouring</a></li><li><a href="service-laser-treatment.html">Laser Treatment</a></li><li><a href="service-acne-treatment.html">Acne Treatment</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <ul class="footer__contact-list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Brisbane, QLD 4000, Australia</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+61700000000">+61 (07) 0000 0000</a></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:hello@herawellnessstudio.com.au">hello@herawellnessstudio.com.au</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>Copyright &copy; <time datetime="2026">2026</time> Hera Wellness Studio. All rights reserved.</p>
+      <nav class="footer__social" aria-label="Social media">
+        <a href="https://facebook.com" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://instagram.com" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+  <div class="popup-modal">
+    <button class="popup-close" id="popupClose" aria-label="Close popup">&#x2715;</button>
+    <div class="popup-modal__header">
+      <h2 class="popup-modal__title" id="popupTitle">Schedule Your Consultation</h2>
+      <p class="popup-modal__sub">Fill out the form below and our team will contact you within 24 hours to confirm your appointment.</p>
+    </div>
+    <form id="popupForm" novalidate>
+      <div class="popup-form__row">
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-name">Full Name <span>*</span></label><input class="popup-form__input" id="popup-name" type="text" placeholder="Your Full Name" autocomplete="name" required></div>
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-email">Email Address <span>*</span></label><input class="popup-form__input" id="popup-email" type="email" placeholder="your@email.com" autocomplete="email" required></div>
+      </div>
+      <div class="popup-form__row">
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-phone">Phone Number <span>*</span></label><input class="popup-form__input" id="popup-phone" type="tel" placeholder="+61 000 000 000" autocomplete="tel" required></div>
+        <div class="popup-form__group"><label class="popup-form__label" for="popup-service">Preferred Treatment</label><select class="popup-form__select" id="popup-service">
+          <option value="">Select a treatment</option>
+          <option>Facial Treatments</option><option>Skin Rejuvenation</option><option>Anti-Aging Treatment</option><option>Body Contouring</option><option>Laser Treatment</option><option>Acne Treatment</option>
+        </select></div>
+      </div>
+      <div class="popup-form__group full"><label class="popup-form__label" for="popup-message">Message or Questions</label><textarea class="popup-form__textarea" id="popup-message" placeholder="Tell us about your goals or ask any questions..."></textarea></div>
+      <button type="submit" class="popup-form__submit">Request Consultation</button>
+    </form>
+    <div class="popup-success" id="popupSuccess">
+      <div class="popup-success__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <p class="popup-success__title">We'll be in touch soon!</p>
+      <p class="popup-success__text">Thank you for reaching out. Our team will contact you within 24 hours.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
