@@ -251,7 +251,7 @@ blockquote{font-family:var(--ff-hd);font-style:italic;font-size:17px;color:var(-
 
 /* ===== HERO (HOME) ===== */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
-.hero__wrap{width:100%;position:relative}
+.hero__wrap{width:100%;}
 .hero__background{position:absolute;inset:0}
 .hero__bg-img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .hero__overlay{position:absolute;inset:0;background:linear-gradient(135deg, rgba(10,31,24,.85) 0%, rgba(10,31,24,.6) 50%, rgba(10,31,24,.4) 100%)}
