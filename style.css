@@ -969,7 +969,7 @@ input,select,textarea{font-family:inherit}
 .nav__link:hover,.nav__link.active{color:var(--g)}
 .nav__link:hover::after,.nav__link.active::after{transform:scaleX(1)}
 .header:not(.scrolled) .nav__link {
-    color: rgb(0 0 0 / 88%);
+    color: white;
 }
 .header:not(.scrolled) .nav__link:hover{color:#fff}
 .header:not(.scrolled) .nav__link::after{background:#fff}
