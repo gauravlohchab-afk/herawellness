@@ -971,7 +971,7 @@ input,select,textarea{font-family:inherit}
 .header:not(.scrolled) .nav__link {
     color: white;
 }
-.header:not(.scrolled) .nav__link:hover{color:#fff}
+.header:not(.scrolled) .nav__link:hover{color:#3a7060;}
 .header:not(.scrolled) .nav__link::after{background:#fff}
 .header:not(.scrolled) .nav__link svg path{stroke:rgba(255,255,255,.85)}
 
